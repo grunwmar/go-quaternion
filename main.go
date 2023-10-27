@@ -3,7 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	var p = Quaternion(1, 1, -1, -1)
-	var q = Quaternion(0, -1, 1, 1)
-	fmt.Println(p.add(q).vectorPart)
+	var q1 = Quaternion{scalarPart: 1, vectorPart: vec(1, 2, 3)}
+	var q2 = Quaternion{scalarPart: 1, vectorPart: vec(-1, -2, -3)}
+
+	fmt.Println(q1, q2, q1.add(q2))
 }

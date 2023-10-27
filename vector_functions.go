@@ -18,3 +18,7 @@ func vectorProd(u [3]float64, v [3]float64) [3]float64 {
 
 	return [3]float64{w0, w1, w2}
 }
+
+func vec(x float64, y float64, z float64) [3]float64 {
+	return [3]float64{x, y, z}
+}
